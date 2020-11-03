@@ -32,6 +32,9 @@ session_start();
                         <a class="nav-link" href="includes/logout.php">Logout</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="resources.php">Case Tracker</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="resources.php">Resources</a>
                     </li>
                     <li class="nav-item">
