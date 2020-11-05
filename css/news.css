@@ -1,0 +1,36 @@
+
+.card {
+	box-shadow: 0 2px 4px 0 black;
+	margin: 20px;
+	padding-left: 35px;
+	padding-right: 35px;
+	padding-top: 25px;
+	width: 95%;
+	height: auto;
+}
+.about-section{
+	padding: 50px;
+	text-align: center;
+	background-color: rgb(196, 91, 31);
+	color: white;
+    box-shadow: 0 2px 4px 0 black;
+    text-shadow: 1.5px 1.5px black;
+}
+
+.button {
+	border: none;
+	outline: 0;
+	padding: 8px;
+	color: white;
+    text-align: center;
+	background-color: black;
+	display: inline;
+}
+.center{
+	display: block;
+	justify-content: center;
+	align-items: center;
+}
+.title{
+    text-shadow: 1px 1px white;
+}
