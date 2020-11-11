@@ -32,7 +32,7 @@ CREATE TABLE `corona` (
   `title` varchar(60) CHARACTER SET utf8 NOT NULL,
   `descript` text CHARACTER SET utf8 NOT NULL,
   `picpath` varchar(80) CHARACTER SET utf8 NOT NULL,
-  `upload_date` date NOT NULL DEFAULT current_timestamp(),
+  `upload_date` timestamp NOT NULL DEFAULT current_timestamp(),
   `rating` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
