@@ -29,12 +29,12 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `corona` (
   `pid` int(11) NOT NULL,
-  `title` varchar(60) CHARACTER SET utf8 NOT NULL,
-  `descript` text CHARACTER SET utf8 NOT NULL,
-  `picpath` varchar(80) CHARACTER SET utf8 NOT NULL,
+  `title` varchar(60)  NOT NULL,
+  `descript` text  NOT NULL,
+  `picpath` varchar(80)  NOT NULL,
   `upload_date` timestamp NOT NULL DEFAULT current_timestamp(),
   `rating` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -43,10 +43,10 @@ CREATE TABLE `corona` (
 --
 
 CREATE TABLE `profile` (
-  `uname` varchar(30) CHARACTER SET utf8 NOT NULL,
-  `picpath` varchar(50) CHARACTER SET utf8 NOT NULL DEFAULT 'uploads/anon.png',
-  `bio` mediumtext CHARACTER SET utf8 DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+  `uname` varchar(30)  NOT NULL,
+  `picpath` varchar(50)  NOT NULL DEFAULT 'uploads/anon.png',
+  `bio` mediumtext  DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -57,13 +57,13 @@ CREATE TABLE `profile` (
 CREATE TABLE `reviews` (
   `rev_id` int(11) NOT NULL COMMENT 'review id',
   `item_id` int(11) NOT NULL COMMENT 'item id to be review',
-  `uname` varchar(80) CHARACTER SET utf8 NOT NULL COMMENT 'user who will review it',
-  `title` varchar(60) CHARACTER SET utf8 NOT NULL,
-  `review_text` text CHARACTER SET utf8 NOT NULL,
+  `uname` varchar(80) CHARACTER SET utf8mb4 NOT NULL COMMENT 'user who will review it',
+  `title` varchar(60) CHARACTER SET utf8mb4 NOT NULL,
+  `review_text` text CHARACTER SET utf8mb4 NOT NULL,
   `rev_date` datetime NOT NULL,
   `rating_num` int(11) NOT NULL,
   `status` int(11) NOT NULL COMMENT 'Is there at least 1 review'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -73,12 +73,12 @@ CREATE TABLE `reviews` (
 
 CREATE TABLE `users` (
   `uid` int(11) NOT NULL,
-  `lname` varchar(50) CHARACTER SET utf8 NOT NULL,
-  `fname` varchar(50) CHARACTER SET utf8 NOT NULL,
-  `email` varchar(80) CHARACTER SET utf8 NOT NULL,
-  `uname` varchar(50) CHARACTER SET utf8 NOT NULL,
-  `password` varchar(100) CHARACTER SET utf8 NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+  `lname` varchar(50)  NOT NULL,
+  `fname` varchar(50)  NOT NULL,
+  `email` varchar(80)  NOT NULL,
+  `uname` varchar(50)  NOT NULL,
+  `password` varchar(100)  NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Indexes for dumped tables
