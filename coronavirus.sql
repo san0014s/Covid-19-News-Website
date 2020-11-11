@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 11, 2020 at 04:56 AM
+-- Generation Time: Nov 11, 2020 at 06:52 AM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.4.10
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `coronavirus` Might need to change to accomadate if others keywords aren't the same
+-- Database: `coronavirus`
 --
 
 -- --------------------------------------------------------
@@ -29,12 +29,12 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `corona` (
   `pid` int(11) NOT NULL,
-  `title` varchar(60)  NOT NULL,
-  `descript` text  NOT NULL,
-  `picpath` varchar(80)  NOT NULL,
-  `upload_date` timestamp NOT NULL DEFAULT current_timestamp(),
+  `title` varchar(60) CHARACTER SET utf8 NOT NULL,
+  `descript` text CHARACTER SET utf8 NOT NULL,
+  `picpath` varchar(80) CHARACTER SET utf8 NOT NULL,
+  `upload_date` date NOT NULL DEFAULT current_timestamp(),
   `rating` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -43,10 +43,10 @@ CREATE TABLE `corona` (
 --
 
 CREATE TABLE `profile` (
-  `uname` varchar(30)  NOT NULL,
-  `picpath` varchar(50)  NOT NULL DEFAULT 'uploads/anon.png',
-  `bio` mediumtext  DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `uname` varchar(30) CHARACTER SET utf8 NOT NULL,
+  `picpath` varchar(50) CHARACTER SET utf8 NOT NULL DEFAULT 'uploads/anon.png',
+  `bio` mediumtext CHARACTER SET utf8 DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -57,13 +57,13 @@ CREATE TABLE `profile` (
 CREATE TABLE `reviews` (
   `rev_id` int(11) NOT NULL COMMENT 'review id',
   `item_id` int(11) NOT NULL COMMENT 'item id to be review',
-  `uname` varchar(80) CHARACTER SET utf8mb4 NOT NULL COMMENT 'user who will review it',
-  `title` varchar(60) CHARACTER SET utf8mb4 NOT NULL,
-  `review_text` text CHARACTER SET utf8mb4 NOT NULL,
+  `uname` varchar(80) CHARACTER SET utf8 NOT NULL COMMENT 'user who will review it',
+  `title` varchar(60) CHARACTER SET utf8 NOT NULL,
+  `review_text` text CHARACTER SET utf8 NOT NULL,
   `rev_date` datetime NOT NULL,
   `rating_num` int(11) NOT NULL,
   `status` int(11) NOT NULL COMMENT 'Is there at least 1 review'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -73,16 +73,22 @@ CREATE TABLE `reviews` (
 
 CREATE TABLE `users` (
   `uid` int(11) NOT NULL,
-  `lname` varchar(50)  NOT NULL,
-  `fname` varchar(50)  NOT NULL,
-  `email` varchar(80)  NOT NULL,
-  `uname` varchar(50)  NOT NULL,
-  `password` varchar(100)  NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `lname` varchar(50) CHARACTER SET utf8 NOT NULL,
+  `fname` varchar(50) CHARACTER SET utf8 NOT NULL,
+  `email` varchar(80) CHARACTER SET utf8 NOT NULL,
+  `uname` varchar(50) CHARACTER SET utf8 NOT NULL,
+  `password` varchar(100) CHARACTER SET utf8 NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `corona`
+--
+ALTER TABLE `corona`
+  ADD PRIMARY KEY (`pid`);
 
 --
 -- Indexes for table `reviews`
