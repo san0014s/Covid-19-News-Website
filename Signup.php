@@ -9,7 +9,7 @@ require "includes/header.php"
                 <div class="signup-form">
                     <form action="includes/signup-helper.php" method="post">
                         <h2>Register</h2>
-                        <p class="hint-text">Start your account now!</p>
+                        <p class="hint-text">Start your account now!!</p>
                         <div class="form-group">
                             <div class="row">
                                 <div class="col">
