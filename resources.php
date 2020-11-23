@@ -2,7 +2,7 @@
 require 'includes/header.php'
 ?>
 <main>
-<link rel="stylesheet" href="css/about.css">
+<link rel="stylesheet" href="css/index.css">
     <title>Resources and Information</title>
     <h1 style="font-family: Impact, Charcoal, sans-serif; text-align: center">Resources and Information</h1>
     <img src="./images/coronavirusWEB.jpg">

@@ -2,7 +2,7 @@
 require 'includes/header.php'
 ?>
 <main>
-<link rel="stylesheet" href="css/about.css">
+<link rel="stylesheet" href="css/index.css">
     <title>Central Coronavirus Information Platform</title>
     <h1 style="font-family: Impact, Charcoal, sans-serif; text-align: center">Central Coronavirus Information Platform</h1>
     <img src="./images/coronavirus.jpg">
