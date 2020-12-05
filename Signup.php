@@ -1,6 +1,8 @@
 <?php
 require "includes/header.php"
 ?>
+/* The signup.php is dedicated to survey whether users have an account or not, If they do not have an account the signup.php
+is giving the user the option to create and account that will be stored within the AWS database. */
 
 <main>
     <div class="bg-cover">
@@ -22,6 +24,7 @@ require "includes/header.php"
                                 </div>
                             </div>
                         </div>
+                        //The user will be require to give a username, email, password, confirm their password, and submit their information
                         <div class="form-group">
                             <input type="text" class="form-control" name="uname" placeholder="Username"
                                 required="required">
@@ -43,6 +46,7 @@ require "includes/header.php"
                                 class="btn btn-outline-success btn-lg btn-block">Register</button>
                         </div>
                     </form>
+                    //If the user has an account with us already then then can click the sign in button to login
                     <div class="text-center">Already have an account? <a href="login.php">Sign in</a></div>
                 </div>
             </div>
