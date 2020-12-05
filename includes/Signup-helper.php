@@ -1,5 +1,5 @@
 <?php
-/*  The signup-helper is meant to use the sql databse we have created to obtain/store information about the user
+/*  The signup-helper is meant to use the sql database we have created to obtain/store information about the user
 That information is the following: Username, email, password, making sure the user confirm the password, user's first and last name
 */
 if(isset($_POST['signup-submit'])){
