@@ -3,7 +3,7 @@ require "includes/header.php"
 ?>
 <!-- The signup.php is dedicated to survey whether users have an account or not, If they do not have an account the signup.php
 is giving the user the option to create and account that will be stored within the AWS database.-->
-
+<!--Register-->
 <main>
     <div class="bg-cover">
         <div class="h-100 container center-me">
