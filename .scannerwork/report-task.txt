@@ -1,0 +1,6 @@
+projectKey=WVU_CS230_202008_Group07
+serverUrl=http://localhost:9000
+serverVersion=8.5.1.38104
+dashboardUrl=http://localhost:9000/dashboard?id=WVU_CS230_202008_Group07
+ceTaskId=AXYvUIeezA5AeWqeMuSC
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AXYvUIeezA5AeWqeMuSC
