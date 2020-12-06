@@ -33,9 +33,9 @@ if (isset($_POST['gallery-submit'])) {
     }
     else{
         $new_name = uniqid('',true).".".$ext;
-        $destination = '../activities/'.$new_name;
+        $destination = '../corona/'.$new_name;
 
-        $sql = "INSERT INTO activities (title,descript,picpath) VALUES (?,?,?)";
+        $sql = "INSERT INTO corona (title,descript,picpath) VALUES (?,?,?)";
         $stmt = mysqli_stmt_init($conn);
         if(!mysqli_stmt_prepare($stmt, $sql)){
             header("Location../login.php?error=SQLInjection");
