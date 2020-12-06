@@ -14,7 +14,7 @@ if(isset($_POST['signup-submit'])){
 
         //If the password and the confirm password are different then an error will be display
         if ($passw !== $pass_rep){
-            header("Location: ../Signup.php?error=diffPasswords&fname=".$fname."&lname=".$lname."&uname=".$username);
+            header("Location: ../signup.php?error=diffPasswords&fname=".$fname."&lname=".$lname."&uname=".$username);
             exit();
         }
         // else if the password and confirma password matches up then the data will be pull to see if another user had it before
@@ -22,7 +22,7 @@ if(isset($_POST['signup-submit'])){
             $sql = "SELECT uname FROM users WHERE uname=?";
             $stmt = mysqli_stmt_init($conn);
             if (!mysqli_stmt_prepare($stmt, $sql)){
-                header("Location: ../Signup.php?error=SQLInjection");
+                header("Location: ../signup.php?error=SQLInjection");
                 exit();
             }
             //This else statement checks if the usename was take
@@ -33,7 +33,7 @@ if(isset($_POST['signup-submit'])){
                 $check = mysqli_stmt_num_rows($stmt);
 
                 if($check > 0){
-                    header("Location: ../Signup.php?error=UsernameTaken");
+                    header("Location: ../signup.php?error=UsernameTaken");
                     exit(); 
                 }
                 //Values arent correct then an error will occur
@@ -41,7 +41,7 @@ if(isset($_POST['signup-submit'])){
                     $sql = "INSERT INTO users (lname, fname, email, uname, password) VALUES (?, ?, ?, ?, ?)";
                     $stmt = mysqli_stmt_init($conn);
                     if (!mysqli_stmt_prepare($stmt, $sql)){
-                        header("Location: ../Signup.php?error=SQLInjection");
+                        header("Location: ../signup.php?error=SQLInjection");
                         exit();
                     }
                     //If the information is correctly inserted then the signup will be a success
@@ -54,7 +54,7 @@ if(isset($_POST['signup-submit'])){
                         $sqlIng = "INSERT INTO profile (uname) VALUES ('$username')";
                         mysqli_query($conn, $sqlIng);
 
-                        header("Location: ../Signup.php?signup=success");
+                        header("Location: ../signup.php?signup=success");
                         exit();
                         
                     }
