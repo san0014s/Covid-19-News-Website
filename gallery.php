@@ -9,7 +9,7 @@ require 'includes/header.php';
     <h1>Gallery</h1>
         <div class="gallery-container">
             <?php
-            $sql = "SELECT * FROM activities ORDER BY upload_data DESC";
+            $sql = "SELECT * FROM corona ORDER BY upload_data DESC";
             $stmt = mysqli_stmt_init($conn);
 
                 mysqli_stmt_execute($stmt);
