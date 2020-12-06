@@ -5,7 +5,7 @@ require 'includes/header.php'
     <link rel="stylesheet" href="css/index.css">
     <title>Resources and Information</title>
     <h1 style="font-family: Impact, Charcoal, sans-serif; text-align: center">Resources and Information</h1>
-    <img src="./images/coronavirusWEB.jpg" alt="A picture dedicated to the topic of Covid-19">
+    <img src="./images/CoronavirusWEB.jpg" alt="A picture dedicated to the topic of Covid-19">
     <div class="disclaimers">
         <h2 style="font-family: Charcoal, sans-serif; margin-top: 10px; text-align:left; margin-left: 80px">What is
             COVID-19?</h2>
