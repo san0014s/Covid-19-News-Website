@@ -40,7 +40,7 @@ session_start();
                         <a class="nav-link" href="resources.php">Resources</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="reviews.php">Reviews</a>
+                        <a class="nav-link" href="gallery.php">Reviews</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="news.php">News</a>
