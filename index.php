@@ -5,7 +5,7 @@ require 'includes/header.php'
 <link rel="stylesheet" href="css/index.css">
     <title>Central Coronavirus Information Platform</title>
     <h1 style="font-family: Impact, Charcoal, sans-serif; text-align: center">Central Coronavirus Information Platform</h1>
-    <img src="./images/coronavirus.jpg">
+    <img src="./images/coronavirus.jpg" alt="Pictures concerning the Covid-19">
     <div class="disclaimers">
         <h2>Basic Coronavirus Precautions</h2>
         <p>Wear a mask in public</p>

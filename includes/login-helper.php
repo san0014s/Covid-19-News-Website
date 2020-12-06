@@ -30,7 +30,7 @@ if(isset($_POST['login-submit'])) {
         else{
             $pass_check = password_verify($passw, $data['password']);
 
-            if ($pass_check == true) {
+            if ($pass_check) {
                 session_start();
                 $_SESSION['uid'] = $data['uid'];
                 $_SESSION['fname'] = $data['fname'];

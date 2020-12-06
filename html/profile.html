@@ -1,3 +1,4 @@
+<!--The Profile.html dictates the style of the profile page; giving it a clean aesthetic-->
 <style>
     .center-me {
         display: flex;
@@ -38,12 +39,12 @@
             }
         }
     </script>
-
+<!--Below is the Bio section of where the user uploads their own picture and can update their Bio-->
 <div class="h-100 center-me" text-center>
     <div class="my-auto">
         <form action="includes/upload-helper.php" method="POST" enctype="multipart/form-data">
             <div class="form-group">
-                <img src="#" onclick="triggered();" id="prof-display">
+                <img src="#" onclick="triggered();" id="prof-display" alt="uploaded picture">
                 <label for="prof-image" id="uname-style">This is where text is supposed to go.</label>
                 <input type="file" name="prof-image" id="prof-image" onchange="preview(this)" class="form-control" style="display: none;">
             </div>
