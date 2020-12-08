@@ -1,14 +1,4 @@
-.about
-    {
-    padding: 40px;
-    color:white;
-    background:rgb(0, 0, 92);
-    letter-spacing: .1em;
-    text-shadow: 1px 1px black;
-    text-align: center;
-    box-shadow: 0 8px 16px 0 black;
-    }
-
+    /*the card is the thing that holds our article information*/
     .card
     {
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
@@ -18,15 +8,45 @@
         margin-bottom: 20px;
         padding: 40px;
     }
-    
+
+    /*this is the title to the articles*/
     .title
     {
         color: black;
         text-shadow: .5px .5px black;
     }
 
+    /*the buttons with the article links*/
     .button
     {
         background-color: rgb(0, 0, 92);
         width: 30%
+    }
+
+    /*the jumbotron placed at the top of the screen*/
+    .jumbotron
+    {
+        padding: 40px;
+        color:white;
+        background-color:rgb(0, 0, 92) !important;
+        letter-spacing: .1em;
+        text-shadow: 1px 1px black;
+        box-shadow: 0 8px 16px 0 black;
+    }
+
+    /*everything below is used to format the information in the jumbotron*/
+    .container
+    {
+        display: flex;
+    }
+    .col-6
+    {
+        flex: 1;
+        padding-left: 100px;
+    }
+    .picture
+    {
+        flex: 2;
+        align-self: right;
+        padding-left: 100px;
     }

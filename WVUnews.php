@@ -1,14 +1,23 @@
 <?php
 require 'includes/header.php'
 ?>
+<!-- Above includes the nav bar into this page and below inserts all the stylesheets -->
     <main>   
     <link rel="stylesheet" href="css/WVUnews.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <div class="about">
-            <h1>WVU News</h1>
-            <p>Everything you need to know about how West Virginia University is handling the Coronavirus</p>
+    <!-- This part adds the jumbotron at the top-->
+        <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                        <div class="col-6">
+                                <h1 class="display-4">WVU News</h1>
+                                <p class="lead">For all your WVU news and alerts regarding Covid-19</p>
+                        </div>
+                        <div class="picture">
+                                <img src="./images/woodburn.jpg" alt="beautiful woodburn hall" width="400" height="300">
+                        </div>
+                </div>
         </div>
-
+        <!-- Everything below are the articles and how they will be added -->
         <h2 style="text-align:center; margin-top: 10px">Articles</h2>
 
                 <div class= "card mx-auto">
