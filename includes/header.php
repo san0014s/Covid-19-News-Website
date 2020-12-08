@@ -16,6 +16,7 @@ session_start();
     <script src="https://kit.fontawesome.com/0809ee8fa6.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
+<!-- this is the Navbar present on every page of the website that allows users to navigate all our pages -->
 <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="d-md-flex d-block flex-row mx-md-auto mx-0">
@@ -27,18 +28,19 @@ session_start();
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
+                <!-- Links for use in navbar -->
                     <?php if (isset($_SESSION['uid'])) {
                         echo '<li class="nav-item">
                         <a class="nav-link" href="includes/logout.php">Logout</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="resources.php">Case Tracker</a>
+                        <a class="nav-link" href="caseTracker.php">Case Tracker</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="resources.php">Resources</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="reviews.php">Reviews</a>
+                        <a class="nav-link" href="gallery.php">Reviews</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="news.php">News</a>
