@@ -5,6 +5,8 @@ require 'includes/review-helper.php';
 ?>
 
 <main>
+        <!--Setting up review submit page -->
+
     <span id="testAvg"></span>
     <div class="container" align="center" style="max-width: 800px">
         <div class="my-auto">
@@ -39,14 +41,16 @@ require 'includes/review-helper.php';
     $(document).ready(function() {
         reset_star();
 
-        // get reviews
+        // get reviews using display-reviews.php
         xhr_getter('display-reviews.php?id=', "review_list");
         //avg();
         xhr_getter('includes/get-ratings.php?id=', "testAvg");
 
+        //checking that rating is not null
         if (localStorage.getItem('rating') != null) {
             setStars(parseInt(localStorage.getItem('rating')));
         }
+        //Sets stars on click
         $('.star-rev').on('click', function() {
             rateIndex = parseInt($(this).data('index'));
             localStorage.setItem('rating', rateIndex);
@@ -57,19 +61,21 @@ require 'includes/review-helper.php';
             setStars(currIndex);
 
         });
+        //if mouse leaves star, resents to grey
         $('.star-rev').mouseleave(function() {
             reset_star();
 
+            //sets stars to the rate index
             if (rateIndex != -1) {
                 setStars(rateIndex);
             }
         });
 
-
+        //resets stars
         function reset_star() {
             $('.star-rev').css('color', 'grey');
         }
-
+        //sets stars
         function setStars(max) {
             for (var i = 0; i < max; i++) {
                 $('.star-rev:eq(' + i + ')').css('color', 'goldenrod');

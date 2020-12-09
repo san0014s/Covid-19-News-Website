@@ -2,10 +2,14 @@
 require 'includes/header.php';
 require 'includes/dbhandler.php';
 ?>
+    <!--Administrative page to upload to the gallery -->
 
 <main>
+
+        <!--Using admin.css style sheet -->
     <link rel="stylesheet" href="css/admin.css">
     <script src="js/upload-display.js"></script>
+    
     <?php
     if (isset($_SESSION['uid'])) {
     ?>

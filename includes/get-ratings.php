@@ -4,6 +4,7 @@ include 'dbhandler.php';
 
 $id = $_GET['id'];
 
+//getting average rating and number of ratings from database
 $sqlAVG = "SELECT AVG(rating_num) AS AVGRATE FROM reviews WHERE item_id = '$id' ORDER BY rev_date DESC";
 $sqlCount = "SELECT count(rating_num) AS Total FROM reviews WHERE item_id = '$id'";
 
@@ -15,6 +16,7 @@ $row2= mysqli_fetch_array($query2);
 
 $avg = round($row['AVGRATE'],1);
 
+//display number of ratings and display average stars
 echo '
 <div class = "container" style= "text-align: center">
     <h1>'.$avg.'</h1>
@@ -24,7 +26,7 @@ echo '
 
 ';
 
-
+//function to display stars
 function stars($av){
     $s = "";
     if ($av == 0) {
