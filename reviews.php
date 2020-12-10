@@ -1,14 +1,14 @@
 <?php
-require 'includes/dbhandler.php';
-require 'includes/header.php';
-require 'includes/review-helper.php';
+require 'includes/dbhandler.php'
+require 'includes/header.php'
+require 'includes/review-helper.php'
 ?>
 
 <main>
         <!--Setting up review submit page -->
 
     <span id="testAvg"></span>
-    <div class="container" align="center" style="max-width: 800px">
+    <div class="container" style="max-width: 800px; align: center">
         <div class="my-auto">
             <form id="review-form" action="includes/review-helper.php" method="post">
                 <div class="container">
