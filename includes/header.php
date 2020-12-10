@@ -43,10 +43,10 @@ session_start();
                         <a class="nav-link" href="gallery.php">Reviews</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="news.php">News</a>
+                        <a class="nav-link" href="news.php">Global News</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="profile.php">Profile</a>
+                        <a class="nav-link" href="WVUnews.php">WVU News</a>
                     </li>';
                     }
                     else {
