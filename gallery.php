@@ -1,5 +1,5 @@
 <?php
-require 'includes/dbhandler.php';
+require 'includes/header.php';
 ?>
 
 <main>
