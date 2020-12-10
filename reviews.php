@@ -1,7 +1,7 @@
 <?php
-require 'includes/dbhandler.php'
-require 'includes/header.php'
-require 'includes/review-helper.php'
+require 'includes/dbhandler.php';
+require 'includes/header.php';
+require 'includes/review-helper.php';
 ?>
 
 <main>
