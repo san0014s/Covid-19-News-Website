@@ -44,7 +44,7 @@ if(isset($_POST['login-submit'])) {
                 $_SESSION['fname'] = $data['fname'];
                 $_SESSION['username'] = $data['uname'];
 
-                header("Location: ../profile.php?login=success");
+                header("Location: ../index.php?login=success");
                 exit();
             }
             // if the password did not match
