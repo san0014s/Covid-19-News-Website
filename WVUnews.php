@@ -21,35 +21,35 @@ require 'includes/header.php'
         <h2 style="text-align:center; margin-top: 10px">Articles</h2>
 
                 <div class= "card mx-auto">
-                        <h2 class = "title">Example Article 1</h2>
-                        <p>Author and Date</p>
-                        <p>Brief Description of what is in the article</p>
-                        <a class="btn btn-secondary" href="#" role="button">Check It Out</a>
+                        <h2 class = "title">Campus Testing Results: Morgantown</h2>
+                        <p>WVU</p>
+                        <p>This page gives access to all the testing completed and reported cases in Morgantown</p>
+                        <a class="btn btn-secondary" href="https://www.wvu.edu/return-to-campus/daily-test-results/morgantown" role="button">Check It Out</a>
                 </div>
 
 
 
                 <div class= "card mx-auto">
-                        <h2 class = "title">Example Article 2</h2>
-                        <p>Author and Date</p>
-                        <p>Brief Description of what is in the article</p>
-                        <a class="btn btn-secondary" href="#" role="button">Check It Out</a>
+                        <h2 class = "title">Gaiters Do No Harm</h2>
+                        <p>Friday, August 14, 2020</p>
+                        <p>WVU toxicologists find coverings help contain the spread of exhaled droplets</p>
+                        <a class="btn btn-secondary" href="https://wvutoday.wvu.edu/stories/2020/08/14/gaiters-do-no-harm-wvu-toxicologists-find-coverings-help-contain-the-spread-of-exhaled-droplets" role="button">Check It Out</a>
                 </div>
 
 
                 <div class= "card mx-auto">
-                        <h2 class = "title">Example Article 3</h2>
-                        <p>Author and Date</p>
-                        <p>Brief Description of what is in the article</p>
-                        <a class="btn btn-secondary" href="#" role="button">Check It Out</a>
+                        <h2 class = "title">The Masked Singers</h2>
+                        <p>Thursday, August 20, 2020</p>
+                        <p>How a WVU choir director composed the perfect masks for performance art</p>
+                        <a class="btn btn-secondary" href="https://wvutoday.wvu.edu/stories/2020/08/20/the-masked-singers-how-a-wvu-choir-director-composed-the-perfect-masks-for-performance-art" role="button">Check It Out</a>
                 </div>
 
 
                 <div class= "card mx-auto">
-                        <h2 class = "title">Example Article 4</h2>
-                        <p>Author and Date</p>
-                        <p>Brief Description of what is in the article</p>
-                        <a class="btn btn-secondary" href="#" role="button">Check It Out</a>
+                        <h2 class = "title">WVU Rockefeller Neuroscience Institute develops new technology to predict onset of COVID-19 related symptoms</h2>
+                        <p>7/15/2020</p>
+                        <p>Researchers at WVU Rockefeller Neuroscience Institute develops new technology to predict onset of COVID-19 symptoms</p>
+                        <a class="btn btn-secondary" href="https://wvumedicine.org/news/article/wvu-rockefeller-neuroscience-institute-develops-new-technology-to-predict-onset-of-covid-19-related-/" role="button">Check It Out</a>
                 </div>
 
 
